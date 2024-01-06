@@ -26,13 +26,23 @@ const DATA_7: UserType[] = [
 //   );
 // };
 
-const SlowComponentAsProps = <SlowComponent/>
+// const SlowComponentAsProps = <SlowComponent/>
+//
+// export const App = () => {
+//   return (
+//     <Fragment>
+//       <Task_3 SlowComponentAsProps={SlowComponentAsProps}/>
+//       <hr />
+//     </Fragment>
+//   );
+// };
+
 
 export const App = () => {
   return (
-    <Fragment>
-      <Task_3 SlowComponentAsProps={SlowComponentAsProps}/>
-      <hr />
-    </Fragment>
+      <Fragment>
+        <Task_3/>
+        <hr />
+      </Fragment>
   );
 };
