@@ -30,7 +30,24 @@ import { SlowComponent } from './slowComponent/SlowComponent';
 // }
 
 
-export const Task_3 = ({children}:any) => {
+// export const Task_3 = ({children}:any) => {
+//
+//     const [value, setValue] = useState('');
+//
+//     const onChange = (event: ChangeEvent<HTMLInputElement>) => setValue(event.currentTarget.value);
+//
+//     return (
+//         <div>
+//             <div>Lags when change value</div>
+//             <input type="text" value={value} onChange={onChange} />
+//             {children}
+//         </div>
+//     );
+// };
+
+
+
+export const Task_3 = ({SlowComponentAsProps}:any) => {
 
     const [value, setValue] = useState('');
 
@@ -40,7 +57,7 @@ export const Task_3 = ({children}:any) => {
         <div>
             <div>Lags when change value</div>
             <input type="text" value={value} onChange={onChange} />
-            {children}
+            {SlowComponentAsProps}
         </div>
     );
 };

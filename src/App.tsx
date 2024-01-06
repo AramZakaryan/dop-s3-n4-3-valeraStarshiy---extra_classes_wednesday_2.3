@@ -15,12 +15,23 @@ const DATA_7: UserType[] = [
   {u6: {name: 'Vlad', id: '6'}},
 ];
 
+// export const App = () => {
+//   return (
+//     <Fragment>
+//       <Task_3>
+//         <SlowComponent/>
+//       </Task_3>
+//       <hr />
+//     </Fragment>
+//   );
+// };
+
+const SlowComponentAsProps = <SlowComponent/>
+
 export const App = () => {
   return (
     <Fragment>
-      <Task_3>
-        <SlowComponent/>
-      </Task_3>
+      <Task_3 SlowComponentAsProps={SlowComponentAsProps}/>
       <hr />
     </Fragment>
   );
