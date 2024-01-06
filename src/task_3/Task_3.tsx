@@ -6,15 +6,25 @@ import { SlowComponent } from './slowComponent/SlowComponent';
 
 export const Task_3 = () => {
 
-  const [value, setValue] = useState('');
-
-  const onChange = (event: ChangeEvent<HTMLInputElement>) => setValue(event.currentTarget.value);
+    console.log("Task_3 render")
 
   return (
     <div>
       <div>Lags when change value</div>
-      <input type="text" value={value} onChange={onChange} />
+      <Input/>
       <SlowComponent />
     </div>
   );
 };
+
+
+const Input = () => {
+
+    console.log("Input render")
+
+    const [value, setValue] = useState('');
+
+    const onChange = (event: ChangeEvent<HTMLInputElement>) => setValue(event.currentTarget.value);
+
+    return <input type="text" value={value} onChange={onChange} />
+}
